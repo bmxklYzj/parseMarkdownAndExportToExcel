@@ -1,0 +1,7 @@
+{
+  "name": "util",
+  "version": "1.0.0",
+  "description": "extract markdown to json",
+  "main": "index.js",
+  "license": "MIT"
+}
