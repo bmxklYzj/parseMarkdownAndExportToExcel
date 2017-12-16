@@ -3,5 +3,11 @@
   "version": "1.0.0",
   "description": "extract markdown to json",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "index": "node index.js"
+  },
+  "dependencies": {
+    "node-xlsx": "^0.11.2"
+  }
 }

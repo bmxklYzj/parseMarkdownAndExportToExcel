@@ -1,6 +1,6 @@
 一、单选
 
-1、如下程序输出什么？
+1、sdafasd如下程序输出什么？
 console.log(typeof 123);
 console.log(typeof function() {});
 console.log(typeof null);
@@ -93,7 +93,7 @@ D. true false
 解析：
 --
 
-8、 如下每条语句单独执行程序输出什么？
+8、如下每条语句单独执行程序输出什么？
 var a;
 console.log(a.toString());
 var a;
@@ -105,33 +105,36 @@ C. undefined 报错
 D. 报错 报错
 答案：A
 解析：undefined和null没有toString方法，但转型函数String能够将任意js类型转换为字符串
-解析：
 --
 
-9、 如下每条语句单独执行程序输出什么？
-console.log(123 + 'a' + 1);
-console.log(123 + 1 + 'a');
+9、如下每条语句单独执行程序输出什么？
+var a;
+console.log(a.toString());
+var a;
+console.log(String(a));
 
-A. 123a1 124a
-B. 123a1 1231a
-C. 报错 124a
+A. 报错 undefined
+B. undefined undefined
+C. undefined 报错
 D. 报错 报错
 答案：A
-解析：+号运算符如果有一个算子是字符串，则两个算子都先转换为字符串再拼接字符串
+解析：undefined和null没有toString方法，但转型函数String能够将任意js类型转换为字符串
 --
 
-10、 如下每条语句单独执行程序输出什么？
-console.log(123 + 1 + NaN);
-console.log(123 + 1 + undefined);
-console.log(123 + 1 + null);
+10、sdafasd如下每条语句单独执行程序输出什么？
+var a;
+console.log(a.toString());
+var a;
+console.log(String(a));
 
-A. 报错 报错 报错
-B. NaN 报错 报错
-C. NaN NaN 124
-D. NaN 124undefined 1231null
-答案：C
-解析：第一个加号执行算数加法，第二个加号因为两个算子中有非数值类型，会先调用Number()转型函数，而Number()会把undefined转成NaN，把null转成0.但要注意parseInt()函数undefined和null均会转成NaN
+A. 报错 undefined
+B. undefined undefined
+C. undefined 报错
+D. 报错 报错
+答案：A
+解析：undefined和null没有toString方法，但转型函数String能够将任意js类型转换为字符串
 --
+
 
 二、填空
 
@@ -167,9 +170,10 @@ var a = 'abc';a = 123;console.log(typeof a);
 解析：
 --
 
-
 三、多选
+
 1、判断一个值val的真假可以怎么办？（   ）
+
 A. !!val
 B. Boolean(val)
 C. Bool(val)
@@ -179,6 +183,7 @@ D. +val
 --
 
 2、将一个基本类型值val转换成字符串可以用哪些方法?( )
+
 A. String(val)
 B. val.toString()
 C. '' + val
